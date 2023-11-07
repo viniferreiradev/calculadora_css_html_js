@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
     <title>Calculadora Digital</title>
 </head>
 <body>
-    <script src="js/script.js"></script>
-    <div class="container">
-        <div class="calculate">
-            <div class="display__calculate">0</div>
-            <div class="keywords__calculate">
-                <button class="key--operation" data-action="add">+</button>
-                <button class="key--operation" data-action="substract">-</button>
-                <button class="key--operation" data-action="mutiple">x</button>
-                <button class="key--operation" data-action="divide">÷</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>0</button>
-                <button class="key--operation" data-action="clear">C</button>
-                <button class="key--operation" data-action="decimal">.</button>
-                <button class="key--operation" data-action="equal">=</button>
+    <div class="calculate">
+        <div class="top__container">
+            <div class="clock">
+                <span class="hour">9</span>:<span class="minute">45</span>
             </div>
+            <div class="status"><img src="status.png" alt="status"></div>
         </div>
-    </div>    
+        <div class="display__calculate">
+            <input id=display" placeholder="0" disabled>
+        </div>
+        <div class="keywords__calculate">
+            <div class="button function ac">AC</div>
+            <div class="button function pm">±</div>
+            <div class="button function percent">%</div>
+            <div class="button operation division">÷</div>
+            <div class="button number-7">7</div>
+            <div class="button number-8">8</div>
+            <div class="button number-9">9</div>
+            <div class="button operation multiplication">x</div>
+            <div class="button number-4">4</div>
+            <div class="button number-5">5</div>
+            <div class="button number-6">6</div>
+            <div class="button operation substration">-</div>
+            <div class="button number-1">1</div>
+            <div class="button number-2">2</div>
+            <div class="button number-3">3</div>
+            <div class="button operation addition">+</div>
+            <div class="button number-0">0</div>
+            <div class="button decimal">,</div>
+            <div class="button operation equal">=</div>
+        </div>
+    </div>
 </body>
 </html>
