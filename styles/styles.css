@@ -17,6 +17,7 @@ body{
     width: 563px;
     height: 1218px;
     color: white;
+    position: relative;
 }
 
 .top__container{
@@ -64,6 +65,7 @@ body{
     height: 110px;
     width: 110px;
     margin: 5px;
+    transition: filter .3s;
 }
 
 .button.function{
@@ -80,6 +82,21 @@ body{
     border-radius: 55px;
     justify-content: flex-start;
     padding: 40px;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / span 2;
+}
+
+.button:active,
+.button:focus{
+    filter: brightness(150%);
+}
+
+.bar__button{
+    width: 200px;
+    height: 5px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
